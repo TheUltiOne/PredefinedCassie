@@ -18,12 +18,12 @@
         {
             Player player = Player.Get((sender as PlayerCommandSender).ReferenceHub);
 
-            if (arguments.Count == 0)
+            if (arguments.Count == 0 || arguments.At(0) == "list")
             {
                 string cassies = "";
-                foreach (var cas in Plugin.Singleton.Config.PredefiniedCassies.Keys)
+                foreach (KeyValuePair<string, string> kvp in Plugin.Singleton.Config.PredefiniedCassies)
                 {
-                    cassies += $"{cas}\n";
+                    cassies += $"{kvp.Key}: {kvp.Value}\n";
                 }
 
                 response = $"Available cassies: \n{cassies}";
