@@ -10,14 +10,14 @@
         public bool AreCassiesNoisy { get; private set; } = true;
         [Description("Example")]
         public string Cassie1 { get; private set; } = "Containment Breach Detected";
-        public string Cassie2 { get; }
-        public string Cassie3 { get; }
-        public string Cassie4 { get; }
-        public string Cassie5 { get; }
-        public string Cassie6 { get; }
-        public string Cassie7 { get; }
-        public string Cassie8 { get; }
-        public string Cassie9 { get; }
-        public string Cassie10 { get; }
+        public string Cassie2 { get; private set; }
+        public string Cassie3 { get; private set; }
+        public string Cassie4 { get; private set; }
+        public string Cassie5 { get; private set; }
+        public string Cassie6 { get; private set; }
+        public string Cassie7 { get; private set; }
+        public string Cassie8 { get; private set; }
+        public string Cassie9 { get; private set; }
+        public string Cassie10 { get; private set; }
     }
 }
